@@ -8,6 +8,7 @@ np.random.seed(42)
 X = np.random.randn(200, 2)
 
 # Apply K-Means clustering
+
 kmeans = KMeans(n_clusters=3, random_state=42)
 y_pred = kmeans.fit_predict(X)
 
@@ -18,3 +19,4 @@ plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1],
 plt.title("K-Means Clustering Example")
 plt.legend()
 plt.show()
+
