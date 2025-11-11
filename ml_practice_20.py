@@ -18,5 +18,7 @@ plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1],
             c="red", marker="X", s=200, label="Centroids")
 plt.title("K-Means Clustering Example")
 plt.legend()
+
 plt.show()
+
 
