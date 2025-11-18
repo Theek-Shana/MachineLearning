@@ -16,7 +16,7 @@ def plot_learning_curves(model, X, y):
     )
     
     train_errors = -train_scores.mean(axis=1)
-    test_errors = -test_scores.mean(axis=1)
+    test_errors = -test_scores.mean(axis=1) 
 
     plt.plot(train_sizes, np.sqrt(train_errors), "o-", label="Training error")
     plt.plot(train_sizes, np.sqrt(test_errors), "o-", label="Testing error")
@@ -42,3 +42,4 @@ poly_reg = Pipeline([
     ("lin_reg", LinearRegression()),
 ])
 plot_learning_curves(poly_reg, X, y)
+
