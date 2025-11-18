@@ -20,7 +20,7 @@ poly_reg = Pipeline([
     ("lin_reg", LinearRegression()),
 ])
 lin_reg.fit(X, y)
-poly_reg.fit(X, y)
+poly_reg.fit(X, y) 
 
 # Plot predictions
 X_new = np.linspace(-3, 3, 100).reshape(100, 1)
@@ -37,4 +37,5 @@ plt.ylabel("y")
 plt.title("Linear vs Polynomial Regression (degree=10)")
 plt.grid(True)
 plt.show()
+
 
