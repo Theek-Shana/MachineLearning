@@ -21,7 +21,7 @@ y_pred = rnd_clf.predict(X_test)
  
 # 6️⃣ Check accuracy
 accuracy = accuracy_score(y_test, y_pred)
-print(f"Random Forest accuracy on MNIST: {accuracy:.4f}")
+print(f"Random Forest accuracy on MNIST: {accuracy:.4f}") 
 
 # 7️⃣ Optional: predict a single digit
 import matplotlib.pyplot as plt
@@ -33,5 +33,6 @@ plt.imshow(image, cmap="gray")
 plt.title(f"Predicted: {rnd_clf.predict([X_test[some_index]])[0]}")
 plt.axis("off")
 plt.show()
+
 
 
