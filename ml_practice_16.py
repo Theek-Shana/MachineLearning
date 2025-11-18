@@ -10,7 +10,7 @@ from sklearn.pipeline import Pipeline
 # Generate dataset
 np.random.seed(42)
 m = 100
-X = 6 * np.random.rand(m, 1) - 3
+X = 6 * np.random.rand(m, 1) - 3 
 y = 0.5 * X**2 + X + 2 + np.random.randn(m, 1)
 
 # Two pipelines: one linear, one polynomial degree 10
@@ -37,3 +37,4 @@ plt.ylabel("y")
 plt.title("Linear vs Polynomial Regression (degree=10)")
 plt.grid(True)
 plt.show()
+
