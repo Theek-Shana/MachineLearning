@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
 # 1️⃣ Load MNIST
-mnist = fetch_openml("mnist_784", version=1, as_frame=False)
+mnist = fetch_openml("mnist_784", version=1, as_frame=False) 
 X, y = mnist["data"], mnist["target"].astype(int)
 
 # 2️⃣ Split into train and test
@@ -33,3 +33,4 @@ plt.imshow(image, cmap="gray")
 plt.title(f"Predicted: {rnd_clf.predict([X_test[some_index]])[0]}")
 plt.axis("off")
 plt.show()
+
