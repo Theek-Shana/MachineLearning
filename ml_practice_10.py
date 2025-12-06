@@ -6,7 +6,7 @@ from sklearn.preprocessing import PolynomialFeatures
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 import matplotlib.pyplot as plt
-import numpy as np
+import numpy as np 
 
 # Step 1: Create sample regression data
 X, y = make_regression(n_samples=40, n_features=1, noise=15, random_state=42) 
@@ -58,5 +58,6 @@ model_low.fit(X_train_low, y_train)
 y_pred_low = model_low.predict(X_test_low)
 fixed_mse = mean_squared_error(y_test, y_pred_low)
 print("\nAfter reducing degree to 2, Test MSE:", fixed_mse)
+
 
 
