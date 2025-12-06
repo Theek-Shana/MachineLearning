@@ -13,7 +13,7 @@ y = np.sin(X) + np.random.randn(30, 1) * 0.3
 degree = 15
 
 # Ridge Regression (L2 Regularization)
-ridge_model = make_pipeline(PolynomialFeatures(degree), Ridge(alpha=1.0))
+ridge_model = make_pipeline(PolynomialFeatures(degree), Ridge(alpha=1.0)) 
 ridge_model.fit(X, y)
 y_ridge = ridge_model.predict(X)
 
@@ -30,3 +30,4 @@ plt.plot(X, y_lasso, color='red', label='Lasso Regression')
 plt.legend()
 plt.title("Ridge vs Lasso Regression (Polynomial Degree = 15)")
 plt.show()
+
