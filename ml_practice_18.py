@@ -14,7 +14,7 @@ m = 100
 X = 6 * np.random.rand(m, 1) - 3
 y = 0.5 * X**2 + X + 2 + np.random.randn(m, 1)
 
-# Split into training and testing sets
+# Split into training and testing sets 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Try models with different degrees
@@ -35,3 +35,4 @@ for degree in [1, 2, 15]:
     print(f"  Train MSE = {train_mse:.4f}")
     print(f"  Test  MSE = {test_mse:.4f}")
     print("-" * 40)
+
