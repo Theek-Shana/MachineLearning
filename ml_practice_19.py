@@ -13,7 +13,7 @@ def plot_learning_curves(model, X, y):
     train_sizes, train_scores, test_scores = learning_curve(
         model, X, y, cv=5, scoring="neg_mean_squared_error",
         train_sizes=np.linspace(0.1, 1.0, 20), random_state=42
-    )
+    ) 
     
     train_errors = -train_scores.mean(axis=1)
     test_errors = -test_scores.mean(axis=1) 
@@ -42,4 +42,5 @@ poly_reg = Pipeline([
     ("lin_reg", LinearRegression()),
 ])
 plot_learning_curves(poly_reg, X, y)
+
 
