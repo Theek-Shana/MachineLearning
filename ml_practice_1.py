@@ -11,7 +11,7 @@ for country, pos_text in position_text_missing_countries.items():
 
 X = np.linspace(0, 115_000, 1000)
 plt.plot(X, t0 + t1 * X, "b:")
-
+ 
 lin_reg_full = linear_model.LinearRegression()
 Xfull = np.c_[full_country_stats[gdppc_col]]
 yfull = np.c_[full_country_stats[lifesat_col]]
@@ -24,4 +24,5 @@ plt.plot(X, t0full + t1full * X, "k")
 plt.axis([0, 115_000, min_life_sat, max_life_sat])
 
 save_fig('representative_training_data_scatterplot')
+
 plt.show()
