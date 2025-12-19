@@ -18,7 +18,7 @@ yfull = np.c_[full_country_stats[lifesat_col]]
 lin_reg_full.fit(Xfull, yfull)
 
 t0full, t1full = lin_reg_full.intercept_[0], lin_reg_full.coef_.ravel()[0]
-X = np.linspace(0, 115_000, 1000)
+X = np.linspace(0, 115_000, 1000) 
 plt.plot(X, t0full + t1full * X, "k")
 
 plt.axis([0, 115_000, min_life_sat, max_life_sat])
@@ -26,5 +26,6 @@ plt.axis([0, 115_000, min_life_sat, max_life_sat])
 save_fig('representative_training_data_scatterplot')
 
 plt.show()
+
 
 
