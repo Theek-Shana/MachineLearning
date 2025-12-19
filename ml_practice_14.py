@@ -10,7 +10,7 @@ np.random.seed(42)
 X = np.random.rand(100, 1) * 4 - 2
 y = 0.5 * X**3 - X**2 + X + np.random.randn(100, 1) * 0.8
 
-# Step 2: Split into training and testing
+# Step 2: Split into training and testing 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Step 3: Train the model (Linear Regression) 
@@ -35,4 +35,5 @@ plt.title("Model Predictions vs Actual Values")
 plt.legend()
 plt.grid(True)
 plt.show()
+
 
