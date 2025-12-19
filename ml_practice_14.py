@@ -28,12 +28,13 @@ print(f"Root Mean Squared Error (RMSE): {rmse:.3f}")
 # Step 6: Visualize predictions vs real data
 plt.figure(figsize=(8, 5))
 plt.scatter(X_test, y_test, color='blue', label='Actual')
-plt.scatter(X_test, y_pred, color='red', label='Predicted', marker='x')
+plt.scatter(X_test, y_pred, color='red', label='Predicted', marker='x') 
 plt.xlabel("X value")
 plt.ylabel("Target (y)")
 plt.title("Model Predictions vs Actual Values")
 plt.legend()
 plt.grid(True)
 plt.show()
+
 
 
