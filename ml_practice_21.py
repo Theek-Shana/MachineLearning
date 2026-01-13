@@ -12,7 +12,7 @@ inertias = []
 k_values = range(1, 10)
 
 for k in k_values:
-    kmeans = KMeans(n_clusters=k, random_state=42)
+    kmeans = KMeans(n_clusters=k, random_state=42)  
     kmeans.fit(X)
     inertias.append(kmeans.inertia_)
 
@@ -23,3 +23,4 @@ plt.xlabel("Number of clusters (K)")
 plt.ylabel("Inertia")
 plt.grid(True)
 plt.show()
+
