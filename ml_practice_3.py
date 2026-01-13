@@ -1,4 +1,4 @@
-# Step 1: Import the libraries
+ # Step 1: Import the libraries
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -52,3 +52,4 @@ plt.legend()
 plt.grid(True)
 plt.title("Model Comparison: Linear Regression vs KNN")
 plt.show()
+
