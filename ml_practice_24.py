@@ -15,7 +15,7 @@ y_pred = dbscan.fit_predict(X)
 
 # 3️⃣ Identify noise points (DBSCAN labels them as -1)
 core_mask = (y_pred != -1)   # True for core/border points
-noise_mask = (y_pred == -1)  # True for noise points
+noise_mask = (y_pred == -1)  # True for noise points 
 
 # 4️⃣ Plot clusters and highlight noise
 plt.figure(figsize=(7, 5))
@@ -24,3 +24,4 @@ plt.scatter(X[noise_mask, 0], X[noise_mask, 1], c="red", marker="x", s=70, label
 plt.title("DBSCAN – Detecting and Removing Noise")
 plt.legend()
 plt.show()
+
