@@ -16,7 +16,7 @@ y_kmeans = kmeans.fit_predict(X)
 dbscan = DBSCAN(eps=0.2, min_samples=5)
 y_dbscan = dbscan.fit_predict(X)
 
-# 4️⃣ Plot the comparison side-by-side
+# 4️⃣ Plot the comparison side-by-side 
 plt.figure(figsize=(12, 5))
 
 # K-Means plot
@@ -30,3 +30,4 @@ plt.scatter(X[:, 0], X[:, 1], c=y_dbscan, cmap="viridis", s=50)
 plt.title("DBSCAN Clustering (Captures Moons)")
 
 plt.show()
+
