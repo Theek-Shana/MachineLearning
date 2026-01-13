@@ -13,5 +13,5 @@ y_pred = dbscan.fit_predict(X)
 
 # Plot clusters
 plt.scatter(X[:, 0], X[:, 1], c=y_pred, cmap="viridis", s=50)
-plt.title("DBSCAN Clustering")
+plt.title("DBSCAN Clustering") 
 plt.show()
