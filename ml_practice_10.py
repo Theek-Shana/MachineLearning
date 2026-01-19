@@ -22,7 +22,7 @@ X_test_high = poly_high.transform(X_test)
 # Fit model (overfitting example) 
 model_high = LinearRegression()
 model_high.fit(X_train_high, y_train)
-
+ 
 # Predict
 y_pred_train = model_high.predict(X_train_high)
 y_pred_test = model_high.predict(X_test_high)
@@ -58,6 +58,7 @@ model_low.fit(X_train_low, y_train)
 y_pred_low = model_low.predict(X_test_low)
 fixed_mse = mean_squared_error(y_test, y_pred_low)
 print("\nAfter reducing degree to 2, Test MSE:", fixed_mse)
+
 
 
 
