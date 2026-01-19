@@ -19,7 +19,7 @@ poly_high = PolynomialFeatures(degree=15)
 X_train_high = poly_high.fit_transform(X_train) 
 X_test_high = poly_high.transform(X_test)
 
-# Fit model (overfitting example)
+# Fit model (overfitting example) 
 model_high = LinearRegression()
 model_high.fit(X_train_high, y_train)
 
@@ -58,6 +58,7 @@ model_low.fit(X_train_low, y_train)
 y_pred_low = model_low.predict(X_test_low)
 fixed_mse = mean_squared_error(y_test, y_pred_low)
 print("\nAfter reducing degree to 2, Test MSE:", fixed_mse)
+
 
 
 
