@@ -17,7 +17,7 @@ y = y.ravel()
 
 # Split the data
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
-
+ 
 # Step 2: Create Polynomial Regression (degree=15 — overfits easily)
 poly_degree = 15
 
@@ -53,3 +53,4 @@ plt.title("Ridge vs Lasso Regularization (Degree 15 Polynomial)")
 plt.xlabel("X")
 plt.ylabel("y")
 plt.show()
+
