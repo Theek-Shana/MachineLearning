@@ -17,9 +17,10 @@ plt.scatter(X[:, 0], X[:, 1], c=y_pred, cmap="viridis", s=50)
 plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1],
             c="red", marker="X", s=200, label="Centroids")
 plt.title("K-Means Clustering Example")
-plt.legend()
+plt.legend() 
 
 plt.show()
+
 
 
 
