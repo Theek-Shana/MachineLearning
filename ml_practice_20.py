@@ -20,6 +20,7 @@ plt.title("K-Means Clustering Example")
 plt.legend() 
 
 plt.show()
+ 
 
 
 
