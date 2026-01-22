@@ -24,7 +24,7 @@ plt.show()
 
 # Step 5: Train a Linear Regression model
 lin_model = LinearRegression()
-lin_model.fit(X, y)
+lin_model.fit(X, y) 
 
 # Step 6: Train a K-Nearest Neighbors (KNN) model
 knn_model = KNeighborsRegressor(n_neighbors=3)
@@ -52,4 +52,5 @@ plt.legend()
 plt.grid(True)
 plt.title("Model Comparison: Linear Regression vs KNN")
 plt.show()
+
 
