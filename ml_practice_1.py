@@ -7,7 +7,7 @@ for country, pos_text in position_text_missing_countries.items():
                  xytext=pos_text, fontsize=12,
                  arrowprops=dict(facecolor='black', width=0.5,
                                  shrink=0.08, headwidth=5))
-    plt.plot(pos_data_x, pos_data_y, "rs")
+    plt.plot(pos_data_x, pos_data_y, "rs") 
 
 X = np.linspace(0, 115_000, 1000) 
 plt.plot(X, t0 + t1 * X, "b:")
@@ -26,6 +26,7 @@ plt.axis([0, 115_000, min_life_sat, max_life_sat])
 save_fig('representative_training_data_scatterplot')
 
 plt.show()
+
 
 
 
