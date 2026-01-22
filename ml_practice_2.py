@@ -10,7 +10,7 @@ data = {
     'Marks': [20, 25, 35, 45, 50, 60, 65, 70, 80, 85]
 }
 df = pd.DataFrame(data)
-
+ 
 # Step 3: Split input (X) and output (y)
 X = df[['Hours']]
 y = df['Marks']
@@ -33,3 +33,4 @@ print("Mean Squared Error:", mse)
 hours = float(input("Enter study hours: "))
 predicted_marks = model.predict([[hours]])
 print(f"Predicted Marks for {hours} hours = {predicted_marks[0]:.2f}")
+
