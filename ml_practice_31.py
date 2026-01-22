@@ -20,7 +20,7 @@ scaler_std = StandardScaler()
 X_train_std = scaler_std.fit_transform(X_train)
 X_test_std = scaler_std.transform(X_test)
 
-# 2️⃣ Min-Max Normalization
+# 2️⃣ Min-Max Normalization 
 scaler_mm = MinMaxScaler()
 X_train_mm = scaler_mm.fit_transform(X_train)
 X_test_mm = scaler_mm.transform(X_test)
@@ -41,3 +41,4 @@ acc_mm = accuracy_score(y_test, y_pred_mm)
 
 print("StandardScaler Accuracy:", acc_std)
 print("MinMaxScaler Accuracy:", acc_mm)
+
